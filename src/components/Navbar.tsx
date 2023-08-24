@@ -22,13 +22,11 @@ export default function Navbar() {
             </div>
             <div className={isOpen ? `${styles.navbar__links} ${styles.open}` : styles.navbar__links}>
                 <ul>
+                    <li><a onClick={closeSidebar} href='/introduction'>Introduction</a></li>
                     <li><a onClick={closeSidebar} href='/lecture'>Lecture</a></li>
-                    <li><a onClick={closeSidebar} href='/wargame'>Wargame</a></li>
+                    <li><a onClick={closeSidebar} href='/issue'>Issue</a></li>
                     <li><a onClick={closeSidebar} href='/ctf'>CTF</a></li>
-                    <li><a onClick={closeSidebar} href='/community'>Community</a></li>
-                    <li><a onClick={closeSidebar} href='/ranking'>Ranking</a></li>
-                    <li><a onClick={closeSidebar} href='/loginpage'>Login</a></li>
-
+                    <li><a onClick={closeSidebar} href='/notice'>Notice</a></li>
                 </ul>
             </div>
         </div>
